@@ -28,7 +28,7 @@ const Whiteboard = () => {
     context.lineWidth = strokeSize;
     contextRef.current = context;
 
-    const newSocket = io("http://localhost:3001", {
+    const newSocket = io("https://whiteboard-collab-backend.onrender.com", {
       query: { roomId },
       transports: ["websocket"],
       reconnection: true,
